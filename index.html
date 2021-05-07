@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+        <meta charset="UTF-8">
+        <script src="js/script.js"></script>
+        <link href="css/style.css" type="text/css" rel="stylesheet"> 
+        <title>IMC</title>
+    </head>
+    <body>
+        <div class="form">
+            <h1>Cálculo do IMC</h1>
+                <form class="form_content">
+                    <div class="form_input">
+                        <span>Nome*</span>
+                        <input type="text" name="nome" id="nome" required>
+                    </div><!--form-input-->
+                    
+                    <div class="form_input">
+                        <span>Altura*</span>
+                        <input type="number" name="altura" step="any" min="0.01" max="300.0" id="altura" >
+                    </div><!--form-input-->
+                    
+                    <div class="form_input">
+                        <span>Peso*</span>
+                        <input type="number" name="peso" step="any" min="0.01" max="300.0" id="peso">
+                    </div><!--form-input-->
+                    
+                    <p class="warning">*campos obrigatórios</p>
+                    <div class="clear"></div>
+                    <div class="submit_form_input">
+                        <input type="button" onClick="imcFunc()" value="Calcular">
+                    </div><!--submit-form-input-->
+                </form><!--form-content-->
+                
+                <div class="container_resultado" >
+                    <p id="resultado"></p>
+                </div>
+        </div><!--form-->
+    </body>
+</html>
